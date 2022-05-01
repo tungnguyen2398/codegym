@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Toán 
+    <input type="text" id="toan"><br>
+    Văn 
+    <input type="text" id="van"><br>
+    Anh
+    <input type="text" id="anh">
+
+    <select name="" id="kv">
+        <option value="0.75">KV1</option>
+        <option value="0.5">KV2</option>
+        <option value="0.25">KV2-NT</option>
+        <option value="0">KV3</option>
+    </select>
+    <button onclick="cal()">Tính điểm</button>
+    <h2>Điểm khối D của bạn là: <span id="result"></span></h2>
+</body>
+<script>
+    function cal() {
+    let toan = parseFloat(document.getElementById('toan').value)
+    let van = parseFloat(document.getElementById('van').value)
+    let anh = parseFloat(document.getElementById('anh').value)
+    let kv = parseFloat(document.getElementById('kv').value)
+    let result = toan + van + anh + kv
+    document.getElementById("result").innerHTML = (toan + anh + van + kv)
+    }
+
+</script>
+</html>

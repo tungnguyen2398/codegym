@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="price">
+    <button onclick="cal()">
+        check
+    </button>
+    <h2 id ="display"></h2>
+</body>
+<script>
+ 
+    
+
+function cal(){
+    let value = document.getElementById('price').value
+    switch (value) {
+        case "Ổi":
+        case "Dưa hấu":{ 
+            document.getElementById('display').innerHTML = "20000 VND" 
+        }
+        break;
+        case "Táo":
+        case "Xoài":{
+             document.getElementById('display').innerHTML = "30000 VND"
+            }
+        break;
+        case "Cam":
+        case "Chôm chôm": {
+            document.getElementById('display').innerHTML = "40000 VND"
+        }
+        break;
+        case "Măng cụt": {
+            document.getElementById('display').innerHTML = "50000 VND"
+        }
+        default:
+    }
+}
+</script>
+</html>
