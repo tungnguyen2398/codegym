@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Amount
+    <input type="text" id ="amount">
+    <br>
+    from
+    <select name="" id="from">
+        <option value="1">USD</option>
+        <option value="23000">VND</option>
+        <option value="130">YEN</option>
+    </select>
+    <br>
+    to
+    <select name="" id="to">
+        <option value="1">USD</option>
+        <option value="23000">VND</option>
+        <option value="130">YEN</option>
+    </select>
+    <button onclick="cal()">Convert</button>
+    <p id="result"></p>
+</body>
+<script>
+    function cal(){
+        let from = document.getElementById('from').value
+        let to = document.getElementById('to').value
+        let amount = document.getElementById('amount').value
+
+        document.getElementById('result').innerHTML = "result: " + ((amount * to) / from).toFixed(3)
+    }
+</script>
+</html>
