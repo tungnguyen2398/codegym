@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // bai 1
+
+    function bai1() {
+        for (let i = 1; i < 100; i++) {
+            if (i ==99) {
+                document.write('đã hoàn thành')
+            } else
+            document.write('' + i + "<br>")
+        }
+    }
+
+
+    // bai 2
+
+    function bai2(){
+        let temp = +prompt('nhập vào nhiệt độ:')
+
+        do {
+            if (temp < 20) {
+                alert('tăng nhiệt độ lên')
+            } else if (temp > 100) {
+                alert('giảm nhiệt')
+            } else {
+                alert('đã đủ ấm')
+            } temp = +prompt('nhập vào nhiệt độ:')
+        } while(temp < 20 || temp > 100)
+    }
+
+    // bai 7
+
+    function bai7 (){
+        for (let i = 1; i <= 100 ; i++) {           
+            if (i%15 == 0){
+                document.write('Fizzbuzz' + "<br>")
+            } else if (i% 5 == 0){
+                document.write('buzz' + "<br>")
+            } else if (i%3 == 0){
+                document.write('Fizz' + "<br>")
+            } else {
+                document.write( i + "<br>")
+            }
+        }
+    }
+    // bai1()
+    bai7()
+</script>
+</html>
