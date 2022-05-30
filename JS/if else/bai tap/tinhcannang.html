@@ -17,7 +17,7 @@
     function cal(){
         let cannang = document.getElementById("cn").value
         let chieucao = document.getElementById("cc").value
-        let bmi = cannang / Math.pow(chieucao, 2)
+        let bmi = cannang / (chieucao*chieucao)
         console.log(bmi);
 
         if (bmi > 40){

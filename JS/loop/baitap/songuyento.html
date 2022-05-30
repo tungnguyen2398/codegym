@@ -10,16 +10,24 @@
     
 </body>
 <script>
-    function hienThiSNT1() {
+    function hienThiSNT() {
         let num = 2
+
         for (let count = 1; count <= 20;) {
-            if (checkSNT1(num)) {
+            let boolean = true
+            for (let i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    boolean = false
+                    break
+                }
+            }
+            if (boolean) {
                 document.write(num + ", ")
                 count++
             }
             num++
         }
     }
-    hienThiSNT1()
+    hienThiSNT()
 </script>
 </html>

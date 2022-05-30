@@ -24,17 +24,17 @@
 
     // bai 2
 
-    function bai2(){
-        let temp = +prompt('nhập vào nhiệt độ:')
-
+    function bai2() {
+        let temp = +prompt("Nhập vào nhiệt độ bất kỳ")
         do {
             if (temp < 20) {
-                alert('tăng nhiệt độ lên')
+                alert("Tăng nhiệt độ lên!")
             } else if (temp > 100) {
-                alert('giảm nhiệt')
+                alert("Giảm nhiệt độ xuống")
             } else {
-                alert('đã đủ ấm')
-            } temp = +prompt('nhập vào nhiệt độ:')
+                break
+            }
+            temp = +prompt("Nhập vào nhiệt độ bất kỳ")
         } while(temp < 20 || temp > 100)
     }
 
@@ -54,6 +54,6 @@
         }
     }
     // bai1()
-    bai7()
+    bai2()
 </script>
 </html>

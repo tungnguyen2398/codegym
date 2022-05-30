@@ -20,15 +20,13 @@
         let num2 = 1
         let count = 1
         let thongbao = "day fibo la:"
-        let num3 = 0
         let amount = document.getElementById('loop').value
-        while (count < amount) {
-            thongbao += num3 + " "
-            num3 = (num1+num2)
+        while (count <= amount) {           
+            num3 = (num1 + num2)
             num1= num2
             num2 = num3
             count++
-            
+            thongbao += num3 + " "
         }document.getElementById('result').innerHTML = thongbao
     }
 
