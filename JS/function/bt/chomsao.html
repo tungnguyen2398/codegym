@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    function find(String){
+        let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+        let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila"," Ursa Major"," Leo"]
+        let index
+        for (let i = 0; i < arr1.length; i++){
+            if (String == arr1[i]){
+                index = i
+                break;
+            } 
+        } return (typeof index) === 'undefined' ? 'khong co ket qua phu hop' : arr2[index];
+        console.log(find())
+    } find()
+
+    let String = prompt('nhap vao ngoi sao:')
+    console.log(find(String))
+</script>
+</html>
