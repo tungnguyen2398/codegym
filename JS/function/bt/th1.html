@@ -7,24 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="input" placeholder="meter to feet">
-    <button onclick="footToMeter()">convert</button>
-    <br>
-    <input type="text" id="input1" placeholder="feet to meter ">   
-    <button onclick="meterToFoot()">convert</button>
-    <p id="result"></p>
+    
 </body>
 <script>
-    function footToMeter(foot){
-        let input = document.getElementById('input').value
-        foot = (input * 3.279)
-        document.getElementById('result').innerHTML = foot       
+    function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            result = "Excellent. We'll play a nice game of chess.";
+        } else {
+            result = "Maybe later then.";
+        }
+        return result;
     }
-
-    function meterToFoot(meter){
-        let input = document.getElementById('input1').value
-        meter = (input * 0.305)
-        document.getElementById('result').innerHTML = meter
-    }
+    
+    let confirmAnswer = confirm("Shall we play a game?");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);
 </script>
 </html>
